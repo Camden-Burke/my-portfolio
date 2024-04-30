@@ -1,0 +1,92 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .type-animation {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .type-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #fff; /* cursor style */
+    animation: typewriter 4s steps(40) 1s forwards;
+  }
+  
+  @keyframes fadeInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  .fill-transition {
+    transition: fill 0.3s ease-in-out; /* Smooth transition for the fill property */
+    fill: #000000; /* Initial color: black */
+  }
+  
+  .fill-transition:hover {
+    fill: #5856d6; /* Color on hover: blue */
+  }
+  
+
+  .button-animation {
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-animation:active {
+    fill: #5856d6;
+  }
+  
+  
+  
+  
